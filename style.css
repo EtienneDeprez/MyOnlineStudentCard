@@ -1,29 +1,45 @@
 
 /* Commentaire sur une ligne */
+
+@media screen and (max-width: 768px) {
+  section {
+    width: 80vw !important;
+  }
+  img.displayed {
+    width: 80vw;
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+  }
+}
 h1 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
+  line-height: 45px;
   padding: 10px 10px 10px 20px;
   color: #3a7eb0;
 }
 h2 {
-  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   font-size: 25px;
-  padding: 40px 10px 30px 20px;
+  line-height: 40px;
+  padding: 40px 10px 30px 10px;
   color: #3a7eb0;
 }
 h3 {
+  font-family: 'Merriweather', serif;
   font-weight: bold;
   font-size: 15px;
-  font-family: 'Merriweather', serif;
-  padding: 10px 10px 10px 30px;
+  line-height: 25px;
+  padding: 10px 10px 10px 20px;
   color: #3a7eb0;
 }
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
+  line-height: 30px;
   padding: 10px 10px 10px 30px;
   color: #152b3c;
 }
@@ -39,22 +55,34 @@ div {
   margin: 10px 10px 10px 10px;
 }
 ul {
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: #c8d3d5;
-  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
   width: 80vw;
-  margin: auto
+  margin: auto;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
 }
 li {
-  margin: 40px 10px 40px 10px;
+  margin: 20px 30px 30px 20px;
 }
 body{
   background-color: #ffffff; 
 }
 img.displayed {
   display: block;
-  border-radius: 10px
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin-right: 20px;
+  resize: both;
+}
+#header {
+  width: 80vw;
+  margin: auto;
+  padding: 40px 0px 50px 0px
 }
 #social_icons {
   display: flex;
@@ -64,39 +92,30 @@ img.displayed {
   border: solid 2px #c8d3d5;
   border-radius: 6px;
   width: 80vw;
-  margin: auto
+  margin: auto;
+  margin-block-end: 100px
 }
-#header {
-  width: 80vw;
-  margin: auto
-}
-#main_section {
-  width: 80vw;
-  margin: auto
-}
-
-@media screen and (min-width: 768px;) {
-    }
-    #header {
+@media screen and (min-width: 768px) {
+  #header {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 80vw;
       margin: auto
     }
-    #main_section {
+  #main_section {
       display: flex;
       flex-direction: row;
       width: 80vw;
       margin: auto
     }
-    ul {
+  ul {
       font-size: 30px;
       font-weight: bold;
       color: #c8d3d5;
       font-family: 'Montserrat', sans-serif;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       width: 80vw;
       margin: auto
     }
